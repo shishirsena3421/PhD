@@ -1,0 +1,2 @@
+# From Server to the local
+scp -r shishir1@ls6.tacc.utexas.edu:path to the file .
