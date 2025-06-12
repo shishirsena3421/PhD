@@ -1,2 +1,9 @@
 # From Server to the local
 scp -r shishir1@ls6.tacc.utexas.edu:path to the file .
+
+
+
+
+#To download the foler having files less than 10mb
+
+rsync -avz --max-size=10m shishir1@ls6.tacc.utexas.edu:/scratch/09065/shishir1/PhD/vasp/2nd_thesis/MoSe2/4x4/GW_640_DOS .
