@@ -1,0 +1,34 @@
+Bader Charge Analysis:
+
+INCAR for Bader Charge Analysis
+*******************************************************
+# Bader - Calculation
+System = Mos2
+PREC = Accurate
+ISTART = 0   # New Calculation
+ICHARG = 2
+LWAVE = .TRUE.
+LCHARG = .TRUE.
+ENCUT = 250     # 130% of the ENMAX value in the POTCAR file
+ISMEAR = 0
+SIGMA = 0.05
+IBRION = -1   # No ionic relaxation
+ISIF = 2      # Not used in SCF but kept for consistency
+NSW = 0       # No ionic steps for SCF
+NELM = 200    # Maximum electronic steps
+EDIFF = 1E-8  # Electronic convergence criterion
+# EDIFFG not needed for SCF
+KPAR = 2
+NCORE = 32
+IVDW = 11     # Keep van der Waals correction if needed
+#################################
+# Bader Charge Analysis
+LAECHG = .TRUE.
+NGXF = 336
+NGYF = 336
+NGZF = 336
+ADDGRID = TRUE
+*******************************************************
+chgsum.pl AECCAR0 AECCAR2
+bader -ref CHGCAR_sum CHGCAR
+
