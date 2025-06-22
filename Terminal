@@ -1,6 +1,8 @@
 # From Server to the local
-scp -r shishir1@ls6.tacc.utexas.edu:path to the file .
+scp -r shishir1@ls6.tacc.utexas.edu:path_to_the_server .
 
+#From local to server
+scp -r filename shishir1@ls6.tacc.utexas.edu:path_to_the_server
 
 
 
