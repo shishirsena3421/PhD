@@ -29,6 +29,6 @@ NGYF = 336
 NGZF = 336
 ADDGRID = TRUE
 *******************************************************
-chgsum.pl AECCAR0 AECCAR2
-bader -ref CHGCAR_sum CHGCAR
+#chgsum.pl AECCAR0 AECCAR2
+#bader -ref CHGCAR_sum CHGCAR
 
