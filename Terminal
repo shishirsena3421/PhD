@@ -14,3 +14,7 @@ SCF (HEAD OF MICROSCOPIC DIELECTRIC TENSOR)
 GW (INVERSE MACROSCOPIC DIELECTRIC TENSOR)
 BSE (dielectricfunction)
 opticaltransitions
+
+
+#phonopy band.yml to band.dat
+phonopy-bandplot --gnuplot band.yaml>band.dat
