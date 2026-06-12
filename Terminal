@@ -18,4 +18,4 @@ opticaltransitions
 
 #phonopy band.yml to band.dat
 phonopy-bandplot --gnuplot band.yaml>band.dat
-honopy --dim="2 2 2" --readfc --fc-symmetry --band "0.5 0.5 0.0  0.5 0.5 0.5  0.0 0.0 0.0  0.5 0.5 0.0" --band-labels "M R G M" --band-format yaml -p
+phonopy --dim="2 2 2" --readfc --fc-symmetry --band "0.5 0.5 0.0  0.5 0.5 0.5  0.0 0.0 0.0  0.5 0.5 0.0" --band-labels "M R G M" --band-format yaml -p
