@@ -1,3 +1,5 @@
+find /path/ -type f -exec touch -a {} +
+
 # From Server to the local
 scp -r shishir1@ls6.tacc.utexas.edu:path_to_the_server .
 
