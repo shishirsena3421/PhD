@@ -26,3 +26,6 @@ opticaltransitions
 #phonopy band.yml to band.dat
 phonopy-bandplot --gnuplot band.yaml>band.dat
 phonopy --dim="2 2 2" --readfc --fc-symmetry --band "0.5 0.5 0.0  0.5 0.5 0.5  0.0 0.0 0.0  0.5 0.5 0.0" --band-labels "M R G M" --band-format yaml -p
+
+# Both phonon band and pdos
+phonopy --band "0.0 0.0 0.0  0.5 0.0 0.0  0.333333 0.333333 0.0  0.0 0.0 0.0  0.0 0.0 0.5  0.5 0.0 0.5  0.333333 0.333333 0.5  0.0 0.0 0.5" --band-labels "$\Gamma$ M K $\Gamma$ A L H A" --mesh 11 11 11 --pdos "1, 2" -p
