@@ -1,0 +1,8 @@
+cd ifermi
+python3 -m venv myenv
+source myenv/bin/activate
+
+
+pip install --upgrade pip wheel setuptools
+pip install numpy cython
+pip install ifermi
